@@ -68,7 +68,7 @@ platform-events-starter/
 # --- Salesforce login (quick start: username+password+token) ---
 SF_LOGIN_URL=https://login.salesforce.com
 SF_USERNAME=gerae.martinez379@agentforce.com
-SF_PASSWORD=agentforce2025
+SF_PASSWORD=
 SF_TOKEN=
 
 # The Platform Event API name, e.g. Agentforce_Custom_Event__e
