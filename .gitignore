@@ -1,0 +1,56 @@
+# ---------------------------
+# Global ignores
+# ---------------------------
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+
+# IDEs & editors
+.vscode/
+.idea/
+*.swp
+
+# ---------------------------
+# Node / Server
+# ---------------------------
+server/node_modules/
+server/dist/
+server/build/
+server/.env
+server/.env.*
+
+# Runtime files
+server/.cache/
+server/.tmp/
+server/tmp/
+server/logs/
+
+# ---------------------------
+# React / Client
+# ---------------------------
+client/node_modules/
+client/dist/
+client/build/
+client/.env
+client/.env.*
+
+# Vite cache
+client/.vite/
+client/.cache/
+client/.temp/
+
+# ---------------------------
+# OS / Misc
+# ---------------------------
+*.bak
+*.tmp
+*.pid
+*.seed
+*.tgz
+coverage/
+.nyc_output/
