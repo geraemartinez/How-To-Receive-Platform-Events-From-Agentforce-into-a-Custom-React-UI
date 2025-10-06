@@ -21,8 +21,7 @@ pnpm-debug.log*
 server/node_modules/
 server/dist/
 server/build/
-server/.env
-server/.env.*
+
 
 # Runtime files
 server/.cache/
