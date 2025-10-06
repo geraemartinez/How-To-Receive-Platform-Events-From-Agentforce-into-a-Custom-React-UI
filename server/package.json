@@ -1,0 +1,17 @@
+{
+  "name": "sf-platform-events-server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "NODE_OPTIONS=--watch node index.js"
+  },
+  "dependencies": {
+    "@jsforce/jsforce-node": "^3.10.8",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsforce": "^3.10.8"
+  }
+}

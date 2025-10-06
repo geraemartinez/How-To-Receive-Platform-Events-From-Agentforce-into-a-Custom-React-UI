@@ -2,7 +2,21 @@
 
 A minimal full‑stack starter that logs into Salesforce with **jsforce**, subscribes to a **Platform Event** channel in real time, and streams events to a **React** UI.
 
+This starter gives you a tiny React frontend and a Node.js backend that authenticates to Salesforce, subscribes to a Platform Event channel via the Streaming API (CometD/Bayeux), and relays events to the browser in real time using Server‑Sent Events (SSE).
+
 > ✅ This is for quick prototyping. For production, prefer OAuth/JWT flows, refresh tokens, retry & backoff, and stricter CORS.
+
+## Overview
+
+**Flow:**
+
+```
+[Salesforce Platform Event] --(CometD)--> [Node server]
+                                      \
+                                       --(SSE /stream)--> [React app]
+```
+
+Why SSE? It’s simple, built‑in to browsers (via `EventSource`), and perfect for one‑way event streams.
 
 ---
 
