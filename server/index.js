@@ -9,11 +9,11 @@ import { StreamingExtension } from "jsforce/lib/api/streaming.js";
 dotenv.config();
 
 const {
-  SF_LOGIN_URL = "https://login.salesforce.com",
+  SF_LOGIN_URL = "https://test.salesforce.com",
   SF_USERNAME,
   SF_PASSWORD,
   SF_TOKEN,
-  SF_PLATFORM_EVENT_API_NAME = "Agentforce_Custom_Event__e",
+  SF_PLATFORM_EVENT_API_NAME = "Session_Event__e",
   PORT = 4000,
   CORS_ORIGIN = "http://localhost:5173",
 } = process.env;
@@ -65,7 +65,7 @@ function broadcastEvent(evt) {
 
 // --- jsforce connection and subscription ---
 const conn = new jsforce.Connection({ loginUrl: SF_LOGIN_URL });
-
+console.log("SF_LOGIN_URL: ", SF_LOGIN_URL);
 async function start() {
   try {
     console.log("Logging into Salesforce...");
